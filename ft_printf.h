@@ -17,11 +17,14 @@
 
 typedef struct s_format
 {
-	int		format_no;
 	void	*content;
 	char	type;
 }	t_format;
 
 int	ft_printf(const char *str, ...);
+static void	ft_put_hex_lower(t_format t, int fd);
+static void	ft_put_hex_upper(t_format t, int fd);
+static void	ft_put_unbr(t_format t, int fd);
+static void	ft_put_addr(t_format t, int fd);
 
 #endif

@@ -12,8 +12,7 @@
 
 #include "ft_printf.h"
 
-static void	ft_put_hex_lower(t_format t);
-static void	ft_put_hex_upper(t_format t);
-static void	ft_put_unbr(t_format t);
-static void	ft_put_addr(t_format t);//근데 여기에는 그냥 값이랑 구조체만 들어가면 되지 않나
-//void *로 콘텐트 넘기고 형식은 이미 알고 있으니깐 
+static void	ft_put_hex_lower(t_format t, int fd);
+static void	ft_put_hex_upper(t_format t, int fd);
+static void	ft_put_unbr(t_format t, int fd);
+static void	ft_put_addr(t_format t, int fd);
